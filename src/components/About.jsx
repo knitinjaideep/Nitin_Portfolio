@@ -20,7 +20,7 @@ const ServiceCard = ({index, title, icon}) => {
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[150px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-3 px-12 min-h-[150px] flex justify-evenly items-center flex-col'
       >
         <img src={icon} alt={title} className='w-16 h-16 object-contain'></img>
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -36,14 +36,13 @@ const About = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>Introduction</p>
       <h2 className={styles.sectionHeadText}>Overview.</h2>
     </motion.div>
     <motion.p variants={fadeIn("", "", 0.1, 1)}
     className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-      I am a skilled software developer with experience in Java, Kotlin, Javascript, and experience in frameworks
-      like Spring boot, react, node.js, and Three.js. I am a quick learner and collaborate closely with clients to create efficient, scalable, and user friendly solutions that solve real-world problems.
-      Let's work together to brig your ideas to life!
+      A software engineer with dedicated to crafting cutting-edge software solutions that merge technical excellence with a user-centric approach. My passion for problem solving drives me to embrace challenges, collaborate effectively with cross-functional teams, and deliver high-quality code. 
+      With a strong foundation in frontend and backend technologies complimented with designing, I am commited to continuous learning, staying updated on industry trends, and contributing to the advancement of technology
+      Let's connect incase you find any of this interesting.
     </motion.p>
 
     <div className='mt-20 flex flex-wrap gap-10'>
