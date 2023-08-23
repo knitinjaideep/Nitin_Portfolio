@@ -1,29 +1,13 @@
 import {
-    mobile,
     backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    // intuit,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    frontend,
+    devops,
+    design,
+    pb,
+    intuit,
+    sagitec,
+    igt,
+    profile
   } from "../assets";
   
   export const navLinks = [
@@ -43,216 +27,82 @@ import {
   
   const services = [
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "System Design",
+      icon: design,
     },
     {
       title: "Backend Developer",
       icon: backend,
+    },
+    {
+      title: "Frontend Developer",
+      icon: frontend,
+    },
+    {
+      title: "DevOps",
+      icon: devops
+    },
+
+  ];
+  
+  const about = [
+    {
+      icon: profile
     }
   ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
-  ];
-  
   const experiences = [
     {
       title: "Software Engineer",
       company_name: "Intuit",
-      icon: starbucks,
+      icon: intuit,
       iconBg: "#383E56",
       date: "January 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Played a significant role in the development and scaling of the Crypto Buy/Sell/Hold (BSH) trading platform. Introduced a generic capability to collect W9 information from customers, making it reusable for other products.",
+        "Ensured tax compliance for customers by enabling timely delivery of tax forms, contributing to a seamless trading experience.",
+        "Pioneered the implementation of a recurring buys feature for Crypto BSH, allowing subscribed customers to create scheduled buy orders for cryptocurrencies. Improved trading convenience and flexibility.",
+        "Successfully implemented a pager duty alerting system, enhancing incident management and response capabilities within the team."
       ],
     },
     {
       title: "Software Engineer",
       company_name: "International Game Technology",
-      icon: tesla,
+      icon: igt,
       iconBg: "#E6DEDD",
       date: "October 2021 - January 2022",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Supported game logic team with enabling game logic alerts.",
       ],
     },
     {
       title: "Technical Analyst",
       company_name: "Sagitec Solutions LLC",
-      icon: shopify,
+      icon: sagitec,
       iconBg: "#383E56",
       date: "August 2016 - October 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed multiple modules (User registration, wage submission, claim submission, correspondence generation, reports and dashboards, BPM workflows and batch jobs) of unemployment insurance system based on functional requirements.",
+        "Performed load and stress testing to identify slow running queries and enhanced their performance significantly by analyzing the query plan and ER diagrams.",
+        "Deployed features to User Acceptance Testing (UAT) and production environments leveraging in house tools.",
+        "Refactored unit tests to enhanced the code coverage metrics and incorporated the test suite into CI builds.",
+        "Coordinated with a release engineer to formulate the commit, branching, build and release plan.",
       ],
     },
     {
       title: "Software Engineering Intern",
       company_name: "Pitney Bowes Inc.",
-      icon: meta,
+      icon: pb,
       iconBg: "#E6DEDD",
       date: "Jan 2016 - June 2016",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Improved operational efficiency by developing Python scripts (Pandas, XLRD) to transform multiple Excel files into a structured format, facilitating the functional team in generating daily reports.",
+        "Designed and created Tableau dashboards for development statistics, enabling enhanced team management insights.",
+        "Worked on the design and development of stored procedures, views, tables, triggers, and other database objects based on delivery (user) stories. I also focused on improving database performance for existing modules.",
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
-  const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
-  ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+
+
+  export { services, experiences, about };

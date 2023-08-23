@@ -19,6 +19,7 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#1d1836",
         color: "#fff",
+        boxShadow: "0px 35px 120px -15px #d8f9ff"
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
@@ -61,8 +62,7 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-      <p className={styles.sectionSubText}>What I have done so far</p>
-      <h2 className={styles.sectionHeadText}>Work Experience.</h2>
+      <h2 className={styles.sectionHeadText}>My Experience.</h2>
     </motion.div>
 
     <div className='mt-20 flex flex-col'>
