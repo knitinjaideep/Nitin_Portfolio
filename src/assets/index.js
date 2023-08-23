@@ -12,6 +12,7 @@ import pb from "./company/pb.png";
 import intuit from "./company/intuit.png";
 import sagitec from "./company/sagitec.png";
 import igt from "./company/igt.png";
+import profile from "./profile.jpeg";
 
 import nklogo from "./nklogo.png";
 
@@ -29,5 +30,6 @@ export {
   nklogo,
   frontend,
   design,
-  devops
+  devops,
+  profile
 };
