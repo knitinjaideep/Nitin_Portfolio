@@ -16,9 +16,6 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
-//template_8xe9ezj
-//service_gxuexnd
-//8t5VNRfkB0ZWVTN80
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -37,8 +34,6 @@ const Contact = () => {
       .send(
         "service_gxuexnd",
         "template_8xe9ezj",
-        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
           to_name: "Nitin Kotcherlakota",
@@ -47,7 +42,6 @@ const Contact = () => {
           message: form.message,
         },
         "8t5VNRfkB0ZWVTN80"
-        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {

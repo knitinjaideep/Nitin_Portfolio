@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Tilt } from 'react-tilt';
-import { SectionWrapper } from '../hoc';
 
-const ServiceCard = ({index, title, icon}) => {
-  return (
-    <Tilt className='xs:w-[250px] w-full'>
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full blue-gradient p-[1px] rounded-[20px] shadow-card'
@@ -28,14 +27,13 @@ const ServiceCard = ({index, title, icon}) => {
       </div>
     </motion.div>
   </Tilt>
-  )
-}
+  );
 
-const About = ({ icon }) => {
+const About = () => {
   return (
     <>
     <motion.div variants={textVariant()}>
-      <h2 className={styles.sectionHeadText}>Overview.</h2>
+    <h2 className={styles.sectionHeadText}>Overview.</h2>
     </motion.div>
     <motion.p variants={fadeIn("", "", 0.1, 1)}
     className="mt-4 text-secondary text-justify text-[17px] leading-[30px]">
@@ -50,7 +48,7 @@ With a solid foundation in both frontend and backend technologies, complemented 
       ))}
     </div>
     </>
-  )
-}
+  );
+};
 
 export default SectionWrapper(About, "about");
